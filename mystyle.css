@@ -1,0 +1,198 @@
+@charset "utf-8";
+
+h1 {
+    color: white;
+    background-color:rgba(0,0,0,0.5);
+    font-size: 170%;
+}
+
+h2{
+	font-size: 150%;
+    border: 1px solid rgb(0, 0, 0);
+	border-bottom: 1px dashed #420808;
+	border-left: 10px solid #420808;
+	padding-left: 7px;
+}
+
+p {
+    color: black;
+    font-size: 80%;
+	line-height:2;
+}
+
+footer {
+    border: 1px solid #420808;
+    text-align: center;
+    background-color: #420808;
+	color: #ffffff;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	font-size: 75%;
+
+}
+
+article h1 {
+    background-color: #420808;
+}
+
+.navy {
+    color: rgb(0, 0, 0);
+}
+
+.red {
+    color: rgb(223, 65, 7);
+}
+
+body{	
+	color:#420808;
+	font-family: "メイリオ","Hiragino Sans",sans-serif;
+    margin: 0;
+	padding: 0;
+	position: relative;
+}
+body::before{
+	content: "";
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-image: url("../image/haikei.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	opacity: 0.5;
+	z-index: -1;
+}
+
+article{
+	position: relative;
+	clear: both;
+	width: 960px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.catch{
+	position: absolute;
+	top: 5%;
+	left: 0px;
+	color: #ffffff;
+	text-shadow: 0px 5px 5px #000000;
+}
+.point-img{
+	float:none;
+}
+header{
+	background-color: #420808;
+	color: #ffffff;
+}
+header img{
+	float: left;
+}
+header-in{
+	width: 960px;
+	margin-left: auto;
+	margin-right: auto;
+	width: auto;
+}
+.sub-h1{
+	background:linear-gradient(to left,#515151,#515151);
+	padding-top: 5px;
+	padding-left: 10px;
+	border-left: 15px solid #581010;
+}
+.point-list{
+	list-style-image: url(../image/list.gig);
+	font-weight :hold;
+    margin-left: 30px;
+}
+.point-img{
+	box-shadow:0px 0px 10px 3px #aaaaaa;
+	border-radius: 10px;
+	float:right;
+	margin-left: 20px;
+	margin-bottom: 10px;
+}
+.sentou{
+	clear:both;
+	text-align:right;
+}
+ol li{
+	display:inline;
+	margin-right: 5px;
+	font-size: 80%;
+}
+ol{
+	padding-left: 0;
+}
+.page{
+	padding-left: 10px;
+	padding-right: 10px;
+}
+nav ul a{
+	text-decoration: none;
+	color:#ffffff;
+}
+nav ul a:hover{
+	color:#ff9019e0;
+}
+ul{
+	list-style-type:none;
+	padding-left:5;
+	line-height: 1.8;
+	font-size: 100%;
+}
+
+ul time{
+	border-radius: 10px;
+	background-color: #000000;
+	color: #ffffff;
+	font-size: 90%;
+	padding-left: 5px;
+	padding-right: 5px;
+	margin-right: 5px;
+}
+nav ul{
+	font-weight: bold;
+	text-align: right;
+	padding-top: 26px;
+	padding-bottom: 5px;
+	margin: 0;
+}
+nav li{
+	display: inline;
+	padding: left 10px;
+	padding-right: 12px;
+	border-right: 1px solid #ffffff;
+}
+
+article img{
+	max-width: 100%;
+	height: auto;
+}
+
+/* 959px以下の場合*/
+@media(max-width:959px){
+header img{
+   float: none;
+}
+nav ul{
+	flex: align left;
+	padding: 0;
+	margin-left:10px
+}
+}
+/*600px以下の場合*/
+@media(max-width:600px){
+	nav li{
+		font-size: 75%;
+		padding-left: 2px;
+		padding-right: 2px;
+	}
+}
+footer{
+	font: 5px;
+	left: 10px;
+}
